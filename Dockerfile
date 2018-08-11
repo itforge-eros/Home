@@ -4,6 +4,6 @@ COPY . /usr/share/nginx/html
 
 WORKDIR /usr/share/nginx/
 
-RUN chmod 777 -R html
+RUN chmod 755 $(find /usr/share/nginx/html -type d) && chmod 644 $(find /usr/share/nginx/html -type f)
 
 EXPOSE 80
