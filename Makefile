@@ -1,5 +1,5 @@
 build:
-	docker build -t registry.gitlab.com/itforge-eros/homepage .
+	docker build -t registry.itforge.io/itforge/homepage .
 
 push:
-	docker push registry.gitlab.com/itforge-eros/homepage
+	docker push registry.itforge.io/itforge/homepage
